@@ -17,22 +17,27 @@ function add() {
     // output.appendChild(li);
 
     // cara yang kedua :
-
+    // mengambil value dari input
     let input = document.getElementById('input-value');
-
-    let baru = "<li> <span onclick='toggle(this)'>" + input.value + "</span>" + "<span onclick='removeItems(this)'> [X] </span>" + "</li>";
-
+    // menambahkan li kedalam output
+    let baru = "<li>" + " <span onclick='toggle(this)'>" + input.value + "</span>" + "<span onclick='removeItems(this)'> [X] </span>" + "</li>";
+    // menggabungkan output dan baru didalamnya
     output.insertAdjacentHTML('afterbegin', baru);
 
+    // valuenya kosong
     input.value = "";
 
 
+
 };
+
+// membuat function onclick toggle di span
 
 function toggle(el) {
     el.classList.toggle('done');
 
 };
+// membuat function onclick di removeItems di span
 
 function removeItems(el) {
     el.parentElement.remove();
