@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(18, 202, 202);
+    color: aliceblue;
+}
+
+h2.title {
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+p.sub-title {
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+#form-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+input {
+    margin-right: 10px;
+}
